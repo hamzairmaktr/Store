@@ -1,0 +1,7 @@
+﻿@model Product
+<div>
+    <h3>@Model.ProductName</h3>
+    <p>@Model.ProductPrice.ToString("c")</p>
+    <a href="/product/get?id=@Model.Id">Detayı Getir</a>
+    <hr />
+</div>

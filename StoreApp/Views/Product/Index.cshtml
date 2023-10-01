@@ -1,0 +1,9 @@
+﻿@model List<Product>
+@section Footer{
+    <p>Footer kısmı ürünler için</p>
+}
+
+@foreach (var item in Model)
+{
+    <partial name="_ProductCard" model="@item" />
+}

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <title>StoreApp</title>
+    <link rel="stylesheet" href="~/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/Site.css" />
+    <link rel="stylesheet" href="~/fontawesome-iconpicker/css/fontawesome-iconpicker.css"/>
+</head>
+<body>
+    <header>
+        <partial name="_Navbar" />
+        @RenderSection("Header",false)
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        Footer
+        @RenderSection("Footer",false)
+    </footer>
+    @await RenderSectionAsync("Scripts",false)
+    <script src="~/jquery/jquery.min.js"></script>
+    <script src="~/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
